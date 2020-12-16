@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Outdoor</string>
+    <string name="title">OpenAir</string>
+    <string name="w.b">White Beach</string>
+    <string name="w.b.text">勝連半島の先端にある白浜が美しい海岸。</string>
+    <string name="w.b.value">景観 : 良\n衛生 : 綺麗\n混雑度 : ガラガラ</string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+    <!--    <string name=""></string>-->
+
+
 </resources>

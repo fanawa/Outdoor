@@ -4,15 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFC107"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="230dp"
+        android:alpha="0.7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trees" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_width="319dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="536dp"
+        android:rotationY="-26"
+
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FBFAF9"
+        android:textColorHighlight="#F4EDEC"
+        android:textSize="60sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="501dp"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/fragment1"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="371dp"
+                android:layout_height="208dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#68FFEB3B"
+                android:text="@string/w.b"
+                android:textColor="#FF5722"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#68FFEB3B"
+                android:text="@string/w.b.text"
+                android:textColor="#1B1A1A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:background="#68FFEB3B"
+                android:paddingLeft="20dp"
+                android:text="@string/w.b.value"
+                android:textAlignment="gravity"
+                android:textColor="#1B1919"
+                android:textColorHighlight="#F4EEEE"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+<!--            <fragment xmlns:map="http://schemas.android.com/apk/res-auto"-->
+<!--                android:id="@+id/map"-->
+
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                tools:context=".MapsActivity" />-->
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
